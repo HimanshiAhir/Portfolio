@@ -1,0 +1,28 @@
+:root{
+    --dark: #2c2d30;
+}
+body.dark-ui, :is(body.dark-ui) :is(.section,.header-wrap,.list-group-item){
+    background-color: var(--dark);
+}
+:is(body.dark-ui) :is(.text-dark, .text-black, .text-muted){
+    color: #fafafa !important;
+}
+:is(body.dark-ui) :is(.testimonial-item,.counter,.testimonial-image-border,.form-control,.blog-wrap,.graduation,.skill-section){
+    background-color: #333438;
+}
+body.dark-ui .banner-content, .dark-ui h1, .dark-ui h4, .dark-ui p, .dark-ui.testimonial-item span, 
+.dark-ui .form-control{
+    color: #fff;
+}
+:is(body.dark-ui) :is(.blog-wrap,.graduation,.skill-section){
+    box-shadow: 3px 3px 8px 0px rgb(145 145 145 / 10%);
+}
+body.dark-ui .language-skill span, .dark-ui .personal-info span{
+    color: #d2d2d2;
+}
+body.dark-ui .testimonial-item small{
+    color: #d2d2d2!important;
+}
+.dark-ui .client-name{
+    color: #1ab394;
+}
