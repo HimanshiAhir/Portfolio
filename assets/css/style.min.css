@@ -384,7 +384,7 @@ body{
 		right:15px;
 	}
 }
-.next-prev-page button{
+.arrows-btn{
     display: block;
     width: 40px;
     height: 40px;
@@ -556,6 +556,12 @@ body{
 }
 .language-skill{
 	margin-bottom: 17px;
+}
+.client-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
+	bottom: -28px;
+}
+.client-pagination .swiper-pagination-bullet-active{
+	background-color: var(--primary);
 }
 .blog-wrap{
 	padding: 30px;
