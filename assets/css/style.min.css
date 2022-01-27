@@ -40,9 +40,6 @@
 .bg-blue{
 	background-color: #0cc0de;
 }
-.text-mute{
-	color: #5f5f5f;
-}
 .fw-300{
 	font-weight: 300;
 }
@@ -73,20 +70,17 @@ ul{
 }
 body{
 	width: 100%;
-    /* padding-left: calc(80px + 14px); */
 	padding-right: 14px;
 	font-family: "Poppins";
 	margin: 0;
 	color: #212529;
 	background-color: var(--bg-light);
 }
-/* .container{
-    width: 100%;
-    max-width: 1140px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-} */
+#main{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
 .header-wrap{
 	width: 100%;
 	height: 100%;
@@ -101,7 +95,7 @@ body{
 	-ms-overflow-style: none;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
-	z-index: 9999;
+	z-index: 999;
 }
 .header-wrap::-webkit-scrollbar {
 	display: none;
@@ -156,22 +150,29 @@ body{
 	outline: none;
 	border: none;
 }
-.theme-toggler i{
-	animation: rounded 3s linear infinite;
+.theme-togglericon{
+	width: 30px;
+	height: 30px;
+}
+.theme-togglericon.moon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 @media(max-width:767px){
 	.theme-toggler{
 		right: 15px;
 	}
 }
-@keyframes rounded{
+/* @keyframes rounded{
 	0% {
 		transform: rotate(0deg);
 	}
 	100% {
 		transform: rotate(360deg);
 	}
-}
+} */
 @media(max-width:992px){
 	body{
 		padding: 0;
@@ -252,7 +253,7 @@ body{
 	margin-right: 24px;
 }
 .social-icon img{
-	width: 15px;
+	width: 17px;
 }
 .square{
 	position: absolute;
@@ -361,6 +362,14 @@ body{
 .personal-info li{
 	width: 50%;
 }
+.personal-info li:last-child{
+	width: 100%;
+}
+@media(max-width: 1199px){
+	.personal-info li{
+		width: 100%;
+	}	
+}
 .personal-info span{
     color: #5f5f5f;
 }
@@ -451,11 +460,11 @@ body{
 	border-radius: 20px;
 	margin-top: 30px;
 }
-.service-card img{
+.service-card-img{
 	width: 50px;
 	height: 50px;
 }
-.service-card img:hover{
+.service-card:hover .service-card-img{
 	transform: rotateY(360deg);
     transition: 0.9s ease;
 }
@@ -700,4 +709,7 @@ body{
 	background-color: var(--primary);
 	color: var(--white);
 	transition: all 0.3s ease;
+}
+.modal-border{
+	border-radius: 20px;
 }
