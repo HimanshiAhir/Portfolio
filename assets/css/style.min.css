@@ -344,6 +344,11 @@ body{
 		transform: translate(0px);
 	}
 }
+.w3c-badge{
+	border:0;
+	width:88px;
+	height:31px;
+}
 .section-title{
 	font-size: 48px;
 	font-weight: 700;
