@@ -628,7 +628,7 @@ body{
 .work-li:not(:last-child){
 	margin-right: 14px;
 }
-@media(max-width:575){
+@media(max-width:575px){
 	.work-li:not(:last-child){
 		margin-right: 6px;
 	}
