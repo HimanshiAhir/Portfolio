@@ -724,3 +724,9 @@ body{
 .key-rs{
 	color: #6c757d;
 }
+@media(max-width:480px){
+	.banner-img{
+		width: 300px;
+    	height: 300px;
+	}
+}
