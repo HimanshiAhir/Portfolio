@@ -160,6 +160,15 @@ body{
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
+.form-field.error input {
+    border-color: #dc3545;
+}
+.form-field.success input {
+    border-color: #28a745;
+}
+.form-field small {
+    color: #dc3545;
+}
 @media(max-width:767px){
 	.theme-toggler{
 		right: 15px;
@@ -628,7 +637,7 @@ body{
     position: relative;
     transition: border .9s ease;
     padding: 1rem;
-    border: none;
+    border: 1px solid #ccc;
 }
 .contact-form .textarea{
 	min-height: 175px;
@@ -650,11 +659,6 @@ body{
 	font-size: 15px;
 	color: #343a40;
 }
-/* .work-links.active, .work-links:hover{
-	background-color: var(--primary);
-	color: var(--white);
-	transition: all 0.3s ease;
-} */
 .portfolio-item-content{
 	position: relative;
 	background-color: var(--white);
@@ -687,7 +691,8 @@ body{
     position: absolute;
     width: 100%;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     opacity: 0;
     transition: all .5s ease;
@@ -731,3 +736,26 @@ body{
     	height: 300px;
 	}
 }
+:root {
+     --error-color: #dc3545;
+     --success-color: #28a745;
+     --warning-color: #ffc107;
+     }
+     .form-field input {
+     border: solid 2px #f0f0f0;
+     border-radius: 3px;
+     padding: 10px;
+     margin-bottom: 5px;
+     font-size: 14px;
+     display: block;
+     width: 100%;
+     }
+     .form-field.error input {
+     border-color: var(--error-color);
+     }
+     .form-field.success input {
+     border-color: var(--success-color);
+     }
+     .form-field small {
+     color: var(--error-color);
+     }
