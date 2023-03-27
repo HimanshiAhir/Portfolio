@@ -17,5 +17,5 @@ $headers = 'From: '.$_POST['email'].'' . "
 $body = $message;
 
 mail($to, $subject, $body, $headers );
-header( 'Location: thank-you.html' ) ; //replace with landing page.
+header( 'Location: thank-you.html' ) ; //replace with Thank you page.
 ?> 
