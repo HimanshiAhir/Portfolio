@@ -8,17 +8,38 @@
     <meta name="yandex-verification" content="c5e7ce6ce79695e5" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.min.css">
-    <link rel="stylesheet" href="./assets/css/dark.min.css">
 </head>
-<body>
-    <h1 class="text-center">Successfully submitted.</h1>
-    <script src="./assets/js/bundle.min.js"></script>
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-    <script src="./assets/js/isotope.min.js"></script>
-    <script src="./assets/js/typed.min.js"></script>
-    <script src="./assets/js/ui.min.js"></script>
-</body>
+<html>
+    <body>
+        <section class="thankyou-section vh-100 d-flex flex-column align-items-center justify-content-center px-2">
+            <h3 class="text-center text-main mb-4">Thank you for contacting!</h3>
+            <div class="thankyou-img-wrap mx-auto">
+                <img src="./assets/medias/thankyou.svg" alt="" class="img-fluid">
+            </div>
+            <p class="text-black text-center thankyou-text mt-5 mb-4">Thank you for contacting me! Your message has been received, and I will get back to you soon. I appreciate your time and look forward to serving you.</p>
+            <p class="text-pink fw-500">Your page will be redirect in <span id="countdown"></span> seconds</p>
+            <a href="https://himanshiahir.com" class="pill-button custom-btn"><i class="fa fa-home me-2"></i> Back to Home</a>
+        </section>
+        <script>
+            // Set the countdown time in seconds
+            var countdownTime = 10;
+            // Get the countdown element
+            var countdownElement = document.getElementById("countdown");
+            // Start the countdown
+            var countdownInterval = setInterval(function() {
+            // Decrement the countdown time
+            countdownTime--;
+            // Update the countdown element
+            countdownElement.innerHTML = countdownTime;
+            // Check if the countdown is finished
+            if (countdownTime <= 0) {
+                // Redirect the website to the specified URL
+                window.location.href = "https://www.himanshiahir.com";
+                // Clear the countdown interval
+                clearInterval(countdownInterval);
+            }
+            }, 1000);
+        </script>
+    </body>
 </html>
