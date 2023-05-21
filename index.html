@@ -66,8 +66,8 @@
             <span class="line"></span>
         </div>
     </aside>
-    <button class="theme-toggler d-flex justify-content-center align-items-center">
-        <img src="./assets/medias/sun.png" alt="" class="theme-togglericon">
+    <button onclick="toggleTheme()" class="theme-toggler d-flex justify-content-center align-items-center">
+        <img src="./assets/medias/sun.png" alt="" class="theme-togglericon sun">
         <img src="./assets/medias/moon.jpg" alt="" class="theme-togglericon moon d-none">
     </button>
 
@@ -571,17 +571,17 @@
                     </div>
                     <div class="col-lg-4 col-md-4 mt-4 portfolio-item graphic">
                         <div class="portfolio-item-content">
-                            <img src="./assets/medias/incontinnum.jpg" alt="" class="img-fluid portfolio-img">
+                            <img src="./assets/medias/analytics-dashboard.png" alt="" class="img-fluid portfolio-img">
                             <div class="img-overlay-content">
                                 <div class="portfolio-icons">
-                                    <a href="https://www.figma.com/file/Wh6SoRvA0kwNbtNBPgbxEx/Incontinuum?node-id=0%3A1" target="_blank" class="bg-light-blue">
+                                    <a href="https://www.figma.com/proto/HxT9m6NqzXbY48zKCU5PZQ/Analytics-Dashboard?node-id=105-25&scaling=scale-down-width" target="_blank" class="bg-light-blue">
                                         <i class="fa fa-link" aria-hidden="true"></i>
                                     </a>
                                     <a href="" class="bg-yellow">
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </a>
                                 </div>
-                                <h5 class="mt-3 mb-0 text-white">Incontinum Wireframe</h5>
+                                <h5 class="mt-3 mb-0 text-white">Analytics Dashboard</h5>
                             </div>
                         </div>
                     </div>
@@ -699,17 +699,17 @@
                     </div>
                     <div class="col-lg-4 col-md-4 mt-4 portfolio-item graphic">
                         <div class="portfolio-item-content">
-                            <img src="./assets/medias/graphic-2.jpg" alt="" class="img-fluid portfolio-img">
+                            <img src="./assets/medias/bpl-image.png" alt="" class="img-fluid portfolio-img">
                             <div class="img-overlay-content">
                                 <div class="portfolio-icons">
-                                    <a href="https://www.figma.com/file/Uwf1tDA88i0AqQnDfIjd2j/Physics?node-id=0%3A1" target="_blank" class="bg-light-blue">
+                                    <a href="https://www.figma.com/proto/zb4bWC23t0A9c9L4vPZp56/Dashboard-Design?node-id=84-135&scaling=scale-down-width" target="_blank" class="bg-light-blue">
                                         <i class="fa fa-link" aria-hidden="true"></i>
                                     </a>
                                     <a href="" class="bg-yellow">
                                         <i class="fa fa-search" aria-hidden="true"></i>
                                     </a>
                                 </div>
-                                <h5 class="mt-3 mb-0 text-white">Education Wireframe</h5>
+                                <h5 class="mt-3 mb-0 text-white">Dashboard Design</h5>
                             </div>
                         </div>
                     </div>
@@ -901,6 +901,51 @@
     <script src="./assets/js/isotope.min.js"></script>
     <script src="./assets/js/typed.min.js"></script>
     <script src="./assets/js/ui.min.js"></script>
+    <script>
+        // Function to apply the dark theme
+        function applyDarkTheme() {
+          const body = document.body;
+          body.classList.add('dark-ui');
+          localStorage.setItem('theme', 'dark');
+        }
+    
+        // Function to apply the light theme
+        function applyLightTheme() {
+          const body = document.body;
+          body.classList.remove('dark-ui');
+          localStorage.setItem('theme', 'light');
+        }
+    
+        // Toggle theme on click
+        function toggleTheme() {
+          const body = document.body;
+          const isDark = body.classList.contains('dark-ui');
+          
+          if (isDark) {
+            applyLightTheme();
+          } else {
+            applyDarkTheme();
+          }
+    
+          // Toggle icon class
+          const sunIcon = document.querySelector('.theme-togglericon.sun');
+          const moonIcon = document.querySelector('.theme-togglericon.moon');
+          sunIcon.classList.toggle('d-none');
+          moonIcon.classList.toggle('d-none');
+        }
+    
+        // Retrieve theme preference from localStorage on page load
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+          applyDarkTheme();
+          const sunIcon = document.querySelector('.theme-togglericon.sun');
+          const moonIcon = document.querySelector('.theme-togglericon.moon');
+          sunIcon.classList.add('d-none');
+          moonIcon.classList.remove('d-none');
+        } else {
+          applyLightTheme();
+        }
+      </script>
 </body>
 
 </html>
