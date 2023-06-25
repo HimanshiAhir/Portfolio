@@ -579,7 +579,7 @@ ul{
 }
 @media (max-width: 576px){
 	.contact-medium-wrap{
-		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
 	}
 	.contact-medium [class^="hai-"], .contact-medium [class*=" hai-"]{
 		font-size: 2.25rem;
