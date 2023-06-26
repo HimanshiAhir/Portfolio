@@ -73,7 +73,7 @@ ul{
 	background-color: rgb(var(--color-bg));
 }
 .hero{
-	background: url(../media/himanshi-ahir-hero-bg.jpg) no-repeat center bottom/cover;
+	background: url(../media/himanshi-ahir-hero-bg.webp) no-repeat center bottom/cover;
 	min-height: calc(100vh - 64px);
 	display: flex;
 	align-items: center;
