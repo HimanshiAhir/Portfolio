@@ -58,6 +58,12 @@ ul{
 	padding-top: 7.5rem;
 	padding-bottom: 7.5rem;
 }
+.pt-120{
+	padding-top: 7.5rem;
+}
+.pb-60{
+	padding-bottom: 3.75rem;
+}
 .h-100{
 	height: 100%;
 }
@@ -518,6 +524,136 @@ ul{
 	border-bottom-color: rgb(var(--color-primary));
 }
 
+.navigation-aside{
+	position: fixed;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 97;
+}
+.nav-list{
+	display: flex;
+	flex-flow: column wrap;
+	gap: 28px;
+	justify-content: center;
+}
+.nav-item{
+	position: relative;
+	font-size: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 62px;
+}
+.nav-item::after{
+	content: "";
+	font-family: 'himanshi-ahir-icons' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+	z-index: 99;
+}
+.nav-item.home-nav::after{
+	content: "\e92c";
+}
+.nav-item.contact-nav::after{
+	content: "\e925";
+}
+.nav-item.services-nav::after{
+	content: "\e92b";
+}
+.nav-item.resume-nav::after{
+	content: "\e92d";
+}
+.nav-item.works-nav::after{
+	content: "\e92e";
+}
+.nav-item:not(.active):hover::after,.nav-item.active::after{
+	color: rgb(var(--color-primary));
+}
+
+.nav-item a{
+	font-size: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 62px;
+    text-decoration: none;
+    display: flex;
+    transition: background 0.2s linear;
+	position: relative;
+	z-index: 99;
+}
+.nav-item:not(.active):hover a{
+	background-color: rgb(var(--color-primary-bg), .9);
+	box-shadow: 0px 10px 50px rgba(29, 29, 29, 0.05);
+}
+
+.nav-item a[data-tooltip]::after {
+	content: attr(data-tooltip);
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 12px);
+    transform: translateY(-50%) scale(0);
+    padding: 8px 12px;
+    background-color: rgb(var(--color-primary-bg), 1);
+    border-radius: 5px;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+    transform-origin: right;
+	color: rgb(var(--color-white));
+	white-space: nowrap;
+}
+.nav-item:hover a[data-tooltip]::after,.nav-item:hover a[data-tooltip]::before {
+	visibility: visible;
+	transform: translateY(-50%) scale(1);
+}
+.nav-item a[data-tooltip]::before{
+	content: "";
+	width: 8px;
+	border-width: 8px 0 8px 8px;
+	border-style: solid;
+	border-color: transparent transparent transparent rgb(var(--color-primary-bg), 1);
+	position: absolute;
+	top: 50%;
+	right: calc(100% + 4px);
+	transform: translateY(-50%) scale(0);
+	visibility: hidden;
+    transition: all 0.1s ease-out;
+}
+.nav-glider{
+	width: 64px;
+	height: 64px;
+	border-radius: 64px;
+	background-color: rgb(var(--color-primary), .1);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 98;
+	transition: all .2s linear;
+}
+.nav-list .nav-item:nth-child(2).active ~ .nav-glider{
+	transform: translate(-50%, calc(100% + 28px));
+}
+.nav-list .nav-item:nth-child(3).active ~ .nav-glider{
+	transform: translate(-50%, calc(200% + 56px));
+}
+.nav-list .nav-item:nth-child(4).active ~ .nav-glider{
+	transform: translate(-50%, calc(300% + 84px));
+}
+.nav-list .nav-item:nth-child(5).active ~ .nav-glider{
+	transform: translate(-50%, calc(400% + 112px));
+}
 
 @media (max-width: 1200px){
 	.hero-title{

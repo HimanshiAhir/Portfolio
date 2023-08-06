@@ -67,7 +67,6 @@
 }
 
 [class^="hai-"], [class*=" hai-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'himanshi-ahir-icons' !important;
   speak: never;
   font-style: normal;
@@ -75,8 +74,6 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -132,6 +129,18 @@
 }
 .hai-medium:before {
   content: "\e921";
+}
+.hai-magic:before {
+  content: "\e92b";
+}
+.hai-house:before {
+  content: "\e92c";
+}
+.hai-file-lines:before {
+  content: "\e92d";
+}
+.hai-briefcase:before {
+  content: "\e92e";
 }
 .hai-skype:before {
   content: "\e926";

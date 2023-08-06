@@ -110,14 +110,35 @@
     <meta name="keywords" content="himanshi ahir, best web developer, best web designer, website developer, website in less budget, website maker, website designer in india, ui ux designer, responsive web design, ecommerce website, website optimization, custom web solutions, lms website, mobile-friendly website">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- <link rel="stylesheet" href="./assets/css/fonts.css">
-    <link rel="stylesheet" href="./assets/css/style.css"> -->
-
-    <link rel="stylesheet" href="./assets/css/style.min.css"> <!-- Production minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- <link rel="stylesheet" href="./assets/css/style.min.css"> --> <!-- Production minified CSS -->
 </head>  
 <body>
-    <aside class="navigation-wrap" title="Navigation Wrap"></aside>
+    <aside class="navigation-aside" title="Navigation Aside">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item home-nav active">
+                    <a href="#home" role="button" data-tooltip="Home"></a>
+                </li>
+                <!-- <li class="nav-item contact-nav">
+                    <a href="#contactLinks" role="button" data-tooltip="My Expertise"></a>
+                </li> -->
+                <li class="nav-item services-nav">
+                    <a href="#services" role="button" data-tooltip="My Expertise"></a>
+                </li>
+                <li class="nav-item resume-nav">
+                    <a href="#resume" role="button" data-tooltip="Resume"></a>
+                </li>
+                <li class="nav-item works-nav">
+                    <a href="#works" role="button" data-tooltip="Works"></a>
+                </li>
+                <span class="nav-glider"></span>
+            </ul>
+        </nav>
+    </aside>
     <main class="main" aria-label="website main content">
         <section class="hero py-60" aria-label="himanshi ahir's intro" id="home">
             <div class="bubbles-wrap">
@@ -163,7 +184,7 @@
                 </div>
             </div>
         </section>
-        <section class="services py-120" aria-label="himanshi's services" id="services">
+        <section class="services pt-120 pb-60" aria-label="himanshi's services" id="services">
             <div class="container">
                 <div class="services-head">
                     <h2 class="services-title" title="service title">Expertise <span>Services!</span> <br> Let's Check It Out.</h2>
@@ -306,7 +327,7 @@
                 </div>
             </div>
         </section>
-        <section class="resume" aria-label="himanshi ahir's resume">
+        <section class="resume py-60" aria-label="himanshi ahir's resume" id="resume">
             <div class="container">
                 <div class="resume-card">
                     <h2 class="resume-heading">Resume</h2>
@@ -449,7 +470,7 @@
                 </div>
             </div>
         </section>
-        <section class="works py-120" aria-label="himanshi's works">
+        <section class="works py-60" aria-label="himanshi's works" id="works">
             <div class="container">
                 <div class="works-head">
                     <h2 class="works-title" title="recent works title">
@@ -528,20 +549,15 @@
             </p>
         </div>
     </footer>
-    <!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
 
-    <!-- Your Chat plugin code -->
+    <div id="fb-root"></div>
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
-
-    <script>
+    <!-- <script>
       var chatbox = document.getElementById('fb-customer-chat');
       chatbox.setAttribute("page_id", "100708826410596");
       chatbox.setAttribute("attribution", "biz_inbox");
     </script>
-
-    <!-- Your SDK code -->
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -549,7 +565,6 @@
           version          : 'v17.0'
         });
       };
-
       (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
@@ -557,6 +572,28 @@
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-    </script>
+    </script> -->
+
+    <script>
+        let sections = document.querySelectorAll('section');
+        let links = document.querySelectorAll('.nav-list a');
+
+        window.onscroll = () => {
+            let top = window.scrollY;
+
+            sections.forEach(sec => {
+                let offset = sec.offsetTop;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if (top >= offset && top < offset + height) {
+                    links.forEach(link => {
+                        link.parentElement.classList.remove('active');
+                    });
+                    document.querySelector('.nav-list .nav-item a[href*=' + id + ']')?.parentElement?.classList.add('active');
+                }
+            });
+        };
+      </script>      
 </body>
 </html>
