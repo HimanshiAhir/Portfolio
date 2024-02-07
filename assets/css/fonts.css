@@ -78,7 +78,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.hai-codiatic:before {
+  content: "\e92f";
+}
 .hai-vscode:before {
   content: "\e92a";
 }
