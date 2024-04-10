@@ -46,6 +46,7 @@ p {
 
 a {
 	color: rgb(var(--color-white-100));
+	text-decoration: none;
 }
 
 ul {
@@ -99,6 +100,62 @@ ul {
 	margin-right: auto;
 }
 
+.header{
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+	transition: all 0.3s;
+}
+
+.header-wrap{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-ul{
+	display: flex;
+	justify-content: center;
+}
+
+.nav-li:not(:last-child){
+	margin-right: 40px;
+}
+
+.logo-wrap{
+	gap: .8rem;
+	font-size: 1.125rem;
+	align-items: center;
+	transition: all .3s ease;
+}
+
+.logo{
+	width: auto;
+	height: 38px;
+}
+
+.button-primary{
+	padding: 10px 30px;
+	border-radius: 50px;
+	border: 2px solid rgb(var(--color-primary));
+	font-weight: 500;
+	transition: all .3s ease;
+}
+
+.button-primary:hover{
+	background-color: rgb(var(--color-primary));
+	color: rgb(var(--color-bg));
+}
+
+.sticky{
+	background-color: rgb(var(--color-bg), .9);
+	position: sticky;
+	top: 0;
+	transition: all 0.3s;
+}
+
 .main {
 	background-color: rgb(var(--color-bg));
 }
@@ -108,6 +165,7 @@ ul {
 	min-height: calc(100vh - 64px);
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .bubbles-wrap {
@@ -404,6 +462,7 @@ ul {
 	display: flex;
 	gap: 2.5rem;
 	align-items: center;
+	padding-top: 3rem;
 }
 
 .hero-title {
@@ -909,7 +968,7 @@ ul {
 @media (max-width: 1200px) {
 	.hero-title {
 		line-height: 1.6;
-		font-size: 2.8rem;
+		font-size: 2.6rem;
 	}
 
 	.resume-card {
@@ -1055,6 +1114,10 @@ ul {
 	.nav-list .nav-item:nth-child(4).active~.nav-glider {
 		transform: translateX(calc(300% + 12px));
 	}
+
+	.head-navbar{
+		display: none;
+	}
 }
 
 @media (max-width: 768px) {
@@ -1091,6 +1154,14 @@ ul {
 	.services-title,
 	.works-title {
 		width: 100%;
+	}
+
+	.logo-text{
+		display: none;
+	}
+
+	.sticky{
+		padding: 10px 0;
 	}
 }
 
