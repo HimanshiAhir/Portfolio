@@ -1163,6 +1163,11 @@ ul {
 	.sticky{
 		padding: 10px 0;
 	}
+
+	.button-primary{
+		font-size: 14px;
+		padding: 10px 18px;
+	}
 }
 
 @media (min-width:768.1px) {
