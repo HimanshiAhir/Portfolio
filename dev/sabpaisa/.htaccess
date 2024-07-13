@@ -1,0 +1,16 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /sabpaisa/
+
+# Remove .php extension and redirect to non-slash version
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
+
+# Redirect URLs with .php extension to non-.php version
+RewriteCond %{THE_REQUEST} ^[A-Z]+\ /sabpaisa/(.+)\.php
+RewriteRule ^(.+)\.php$ /sabpaisa/$1 [L,R=301]
+
+# Redirect to non-slash version (excluding directories)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+?)/$ /sabpaisa/$1 [L,R=301]

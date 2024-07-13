@@ -1,0 +1,50 @@
+/* Banner Style  */
+.about-us-banner{
+    min-height: 300px;
+    background-image:linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.4)),
+    url(../img/111.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.about-us-banner-content{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-us-heading{
+    font-size: 40px;
+    font-weight: 600;
+}
+.about-us-breadcrumb{
+    position: absolute;
+    bottom: 10px;
+}
+.breadcrumb-slash{
+    margin: 0 16px;
+}
+/* Banner Style End */
+/* About Us Style */
+.about-us-section{
+    background-color: #f9f9f9;
+}
+.about-us{
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.team-intro{
+    padding: 30px 15px;
+    margin-top: 30px;
+    background-color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.team-intro:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.team-social-icon li{
+    margin: 0 10px;
+}
+/* About Us End */

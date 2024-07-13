@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'sabpaisa-icons';
+  src: url('../fonts/sabpaisa-icons.eot?to7r2');
+  src: url('../fonts/sabpaisa-icons.eot?to7r2#iefix') format('embedded-opentype'),
+    url('../fonts/sabpaisa-icons.ttf?to7r2') format('truetype'),
+    url('../fonts/sabpaisa-icons.woff?to7r2') format('woff'),
+    url('../fonts/sabpaisa-icons.svg?to7r2#sabpaisa-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="spi-"],
+[class*=" spi-"] {
+  font-family: 'sabpaisa-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.spi-setting:before {
+  content: "\e912";
+}
+
+.spi-profile:before {
+  content: "\e913";
+}
+
+.spi-logout:before {
+  content: "\e914";
+}
+
+.spi-delete:before {
+  content: "\e915";
+}
+
+.spi-close:before {
+  content: "\e910";
+}
+
+.spi-more:before {
+  content: "\e911";
+}
+
+.spi-filter:before {
+  content: "\e900";
+}
+
+.spi-integration:before {
+  content: "\e901";
+}
+
+.spi-kyc:before {
+  content: "\e902";
+}
+
+.spi-refund-history:before {
+  content: "\e903";
+}
+
+.spi-product-catalog:before {
+  content: "\e904";
+}
+
+.spi-report:before {
+  content: "\e905";
+}
+
+.spi-success-rate:before {
+  content: "\e906";
+}
+
+.spi-tnx-history:before {
+  content: "\e907";
+}
+
+.spi-tnx-enquiry:before {
+  content: "\e908";
+}
+
+.spi-tnx-summary:before {
+  content: "\e909";
+}
+
+.spi-user:before {
+  content: "\e90a";
+}
+
+.spi-faq:before {
+  content: "\e90b";
+}
+
+.spi-dashboard:before {
+  content: "\e90c";
+}
+
+.spi-chevron-right:before {
+  content: "\e90d";
+}
+
+.spi-bell:before {
+  content: "\e90e";
+}
+
+.spi-chargeback-history:before {
+  content: "\e90f";
+}

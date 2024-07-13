@@ -1,0 +1,233 @@
+/* ============ Home Page Style Start ============ */
+/* Banner Style Strart */
+.swiper-slider img{
+    width: 100%;
+}
+.swiper-slider .swiper-button-prev, .swiper-slider .swiper-button-next{
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #f6824c;
+    border-radius: 50%;
+    font-weight: 600;
+    --swiper-navigation-size:12px;
+}
+.slide-items{
+    position: relative;
+}
+.slide-content{
+    padding: 0 15px;
+    position: absolute;
+    left: 8%;
+    top: 20%;
+}
+.banner-para{
+    font-weight: 600;
+    border-left: 1px solid;
+    padding: 0 14px;
+}
+.banner-heading{
+    font-size: 58px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.prize-tag{
+    font-size: 30px;
+    font-weight: 600;
+}
+/* Banner Style End */
+/* New Tranind Section style  */
+.trainding-bg1, .trainding-bg2{
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.trainding-content{
+    position: absolute;
+    top: 0;
+}
+.trainding-bg1 img, .trainding-bg2 img{
+    width: 100%;
+    transition: all 1s;
+}
+.trainding-bg1:hover img, .trainding-bg2:hover img{
+    transform: scale(1.1);
+}
+.trainding-para{
+    font-size: 18px;
+    color: #f6824c;
+}
+.traind-btn{
+    position: absolute;
+    left: 16px;
+    bottom: 10px;
+    font-size: 12px;
+    padding: 6px 18px;
+}
+/* New Tranind Section style End  */
+/* Best Selling Card Style  */
+.image-box img{
+    width: 100%;
+}
+.card-title{
+    color: #373737;
+}
+.star{
+    color: rgb(156, 156, 156);
+    font-size: 13px;
+}
+.active-star{
+    color: #fb8a2d;
+    font-size: 13px;
+}
+.buy-btn {
+    font-size: 14px;
+    padding: 5px 32px;
+}
+/* Best Selling Card Style End  */
+/* Category Section Style Start */
+.col-right{
+    min-height: 720px;
+    background-image:linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), 
+    url(../img/5da13502f9aadf21fe93fbd39d233f84.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    cursor: pointer;
+    position: relative;
+}
+.col-right-content{
+    position: absolute;
+    top: 5%;
+    left: 18px;
+}
+.text-bottom{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.heading-bottom{
+    font-size: 32px;
+    font-weight: 500;
+}
+.product-img{
+    min-height: 300px;
+    position: relative;
+}
+.poroduct-img img{
+    width: 100%;
+}
+.category-title{
+    font-size: 20px;
+    color: #eb9956;
+}
+.category-para{
+ color: #af7c48;
+}
+.categry-heading{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.buy-button{
+    padding: 0px 12px;
+    font-size: 15px;
+}
+/* Category Section Style End */
+/* Feature Section Style Start */
+.feature-card{
+    position: relative;
+}
+.new-btn{
+    font-size: 14px;
+    padding: 3px 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.feature-card-img{
+    position: relative;
+    width: 100%;
+}
+.feature-card-img img{
+    width: 100%;
+}
+.card-price-para{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #6f6f6f;
+}
+.card-icon{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0, 0.1);
+}
+.right-arrow{
+    padding-left: 5px;
+}
+/* Feature Section Style End */
+
+@media (max-width: 992.98px){
+    .image-box{
+        width: 100%;
+    }
+}
+@media(max-width:767px){
+    .banner-para{
+        display: none;
+    }
+    .banner-heading{
+        font-size: 42px;
+    }
+    .sub-heading{
+        font-size: 26px;
+    }
+    .trainding-bg1, .trainding-bg2{
+        max-width:100%;
+        margin-bottom: 20px;
+    }
+    .swiper-slider .swiper-button-prev, .swiper-slider .swiper-button-next{
+        width: 30px;
+        height: 30px;
+        --swiper-navigation-size:10px;
+    }
+}
+@media(max-width:576px){
+    .banner-heading{
+        display: none;
+    }
+    .sub-heading{
+        font-size: 24px;
+    }
+    .prize-para{
+        display: none;
+    }
+}
+@media(max-width:450px){
+    .slide-content{
+        top:0;
+    }
+    .banner-btn {
+        font-size: 9px;
+        padding: 6px 11px;
+        margin-top: -22px;
+    }
+    .swiper-slider .swiper-button-prev, .swiper-slider .swiper-button-next{
+        width: 24px;
+        height: 24px;
+        --swiper-navigation-size:10px;
+    }
+    .heading-bottom{
+        font-size: 28px;
+    }
+    .logo{
+        max-width: 130px;
+    }
+}
+/* ============ Home Page Style End ============ */

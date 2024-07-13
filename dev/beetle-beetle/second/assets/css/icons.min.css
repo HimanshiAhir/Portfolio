@@ -1,0 +1,50 @@
+
+@font-face {
+    font-family: 'second-task-icons';
+    src: url('../fonts/second-task-icons.eot?wmglfj');
+    src: url('../fonts/second-task-icons.eot?wmglfj#iefix') format('embedded-opentype'),
+         url('../fonts/second-task-icons.ttf?wmglfj') format('truetype'),
+         url('../fonts/second-task-icons.woff?wmglfj') format('woff'),
+         url('../fonts/second-task-icons.svg?wmglfj#second-task-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="ati-"],
+[class*=" ati-"] {
+    font-family: 'second-task-icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ati-arrow-left:before {
+    content: "\e900";
+}
+
+.ati-arrow-right:before {
+    content: "\e901";
+}
+
+.ati-mute:before {
+    content: "\e902";
+}
+
+.ati-pause:before {
+    content: "\e903";
+}
+
+.ati-play:before {
+    content: "\e904";
+}
+
+.ati-unmute:before {
+    content: "\e905";
+}
+  

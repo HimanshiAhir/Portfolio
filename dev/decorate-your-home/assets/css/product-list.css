@@ -1,0 +1,124 @@
+/* ============ Product List Page Style Start ============ */
+/* Banner Style  */
+.product-list-banner{
+    min-height: 300px;
+    background-image:linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.2)),
+    url(../img/product-list-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.product-list-banner-content{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.product-list-heading{
+    font-size: 40px;
+    font-weight: 600;
+}
+.product-list-breadcrumb{
+    position: absolute;
+    bottom: 10px;
+}
+.breadcrumb-slash{
+    margin: 0 16px;
+}
+/* Banner Style End */
+/* Main Section & Aside Style */
+.product-list-flex, .product-list-search-input, .product-list-category, 
+.product-list-price, .product-list-size{
+    padding: 14px 24px;
+    background-color: #fff;
+}
+.list-icon{
+    padding: 0 20px;
+    color: #af7c48;
+}
+.table-icon{
+    color: #6f6f6f;
+}
+.table-icon, .list-icon{
+    font-size: 15px;
+}
+.product-list-card{
+    position: relative;
+}
+.product-list-img{
+    position: relative;
+    width: 100%;
+}
+.product-list-img img{
+    position: relative;
+    width: 100%;
+    transition: all .5s;
+}
+.product-list-section{
+    background-color: #f9f9f9;
+}
+.product-list-card-section{
+    background-color: #fff;
+    padding: 14px;
+    transition: all .2s;
+    margin-bottom: 48px;
+}
+.product-list-card-section:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.product-list-card-section:hover img{
+    transform: scale(.9);
+}
+.prduct-list-price-tag{
+    padding-right: 20px;
+    font-size: 20px;
+    color: rgb(165, 76, 76);
+}
+.product-list-search-input{
+    border: none;
+}
+.slidecontainer {
+    width: 100%;
+}
+.slider {
+-webkit-appearance: none;
+width: 100%;
+height: 10px;
+border-radius: 5px;
+background: #cacaca;
+outline: none;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+} 
+.slider:hover{
+opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 18px;
+height: 18px;
+border-radius: 50%;
+background: #af7c48;
+cursor: pointer;
+} 
+.slider::-moz-range-thumb {
+width: 18px;
+height: 18px;
+border-radius: 50%;
+background: #04AA6D;
+cursor: pointer;
+}
+.size-active, .size-link:hover{
+    background-color: #af7c48;
+    color: #fff;
+}
+@media (max-width:576px){
+    .list-icon{
+        padding: 0 8px;
+    }
+}
+/* Main Section & Aside Style End */
+/* ============ Product List Page Style End ============ */

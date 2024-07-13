@@ -1,0 +1,88 @@
+/* Banner Style  */
+.contact-us-banner{
+    min-height: 300px;
+    background-image:linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0, 0.3)),
+    url(../img/contact-us-page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.contact-us-banner-content{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact-us-heading{
+    font-size: 40px;
+    font-weight: 600;
+}
+.contact-us-breadcrumb{
+    position: absolute;
+    bottom: 10px;
+}
+.breadcrumb-slash{
+    margin: 0 16px;
+}
+/* Banner Style End */
+.contact-us-section{
+    background-color: #f9f9f9;
+}
+.contact-page{
+    background-color: #fff;
+    padding: 40px;
+}
+.contact-page:hover{
+    box-shadow: 1px 25px 54px rgb(0 0 0 / 12%);
+}
+.contact-sub-heading{
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 26px;
+    padding-bottom: 14px;
+}
+.contact-sub-heading::before{
+    content: "";
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    background-color: #af7c48;
+    left: 0;
+    bottom: 0;
+}
+.contact-info ul li i {
+    background: #ddd;
+    color: #999;
+    float: left;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 20px;
+    text-align: center;
+    width: 35px;
+}
+input, textarea {
+    background: #f6f6f6;
+    border: medium none;
+    color: #999;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    outline: none;
+}
+.custom-textarea {
+    height: 100px;
+    padding: 15px 20px;
+    width: 100%;
+    outline: none;
+}
+.map{
+    max-width: 600px;
+}
+iframe{
+    width: 100%;
+}
