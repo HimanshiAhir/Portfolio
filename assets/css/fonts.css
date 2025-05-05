@@ -84,6 +84,9 @@
 .hai-vscode:before {
   content: "\e92a";
 }
+.hai-bb-agency:before {
+  content: "\e930";
+}
 .hai-accessiblity:before {
   content: "\e914";
 }

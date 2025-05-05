@@ -104,7 +104,7 @@ ul {
 }
 
 .hero {
-	background: url(../media/himanshi-ahir-hero-bg.webp) no-repeat center bottom/cover;
+	background: url(../media/himanshi-ahir-hero-bg.jpg) no-repeat center bottom/cover;
 	min-height: calc(100vh - 64px);
 	display: flex;
 	align-items: center;
@@ -423,7 +423,10 @@ ul {
 	font-size: 1.3rem;
 	line-height: 2rem;
 }
-
+.hero-img-wrap{
+	width: 80%;
+	max-width: 480px;
+}
 .hero-img {
 	max-width: 100%;
 }
@@ -747,8 +750,16 @@ ul {
 	color: #93da51;
 }
 
-.hai-developer-bazaar,.hai-codiatic {
+.hai-developer-bazaar{
 	color: rgb(var(--color-white));
+}
+
+.hai-bb-agency{
+	color: #db3932;
+	position: relative;
+	border-radius: 18px;
+	background: radial-gradient(circle, #fff 60%, transparent 60%);
+
 }
 
 .job-timespan,
@@ -1135,10 +1146,6 @@ ul {
 		max-width: 80rem;
 		padding-left: 2rem;
 		padding-right: 2rem;
-	}
-
-	.col-lg-50 {
-		width: 50%;
 	}
 
 	.works-grid {
