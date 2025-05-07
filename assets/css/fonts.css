@@ -231,3 +231,6 @@
 .hai-webflow:before {
   content: "\e931";
 }
+.hai-close:before {
+  content: "\e933";
+}
