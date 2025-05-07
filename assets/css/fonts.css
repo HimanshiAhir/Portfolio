@@ -225,3 +225,9 @@
 .hai-illustrator:before {
   content: "\e913";
 }
+.hai-hubspot:before {
+  content: "\e932";
+}
+.hai-webflow:before {
+  content: "\e931";
+}
