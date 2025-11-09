@@ -442,6 +442,8 @@ ul {
 	color: rgb(var(--color-bg));
 	text-transform: capitalize;
 	gap: 4px;
+	cursor: pointer;
+    font-family: 'Work Sans';
 }
 
 .button .hai-arrow-right {
